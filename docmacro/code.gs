@@ -1,17 +1,23 @@
-var emailDomain="@exm.zeven-linden.nl";
-var baseOrgUnit="zeven-linden.nl/Examen/Accounts";
+/**
+* Google Sheet Marco to create exam accounts
+*
+* Bt Jeff Schilders <jeff@schilders.com>
+**/
+
+var emailDomain="@exm.zeven-linden.nl"; /** Exam domain **/
+var baseOrgUnit="zeven-linden.nl/Examen/Accounts"; /** Where to create Exam accounts **/
 
 var statementHeader;
-var TemplateID =  '1JnzHU--Aj69mSYScDwbRQ-K9KQkcC05elx4D_gFtIQU';
-var outputDocId = '1wTiCLfoqnckTGqu-Jo9EpgeqOEDL2ZZolOXAAY-s4Xw';
+var TemplateID =  '1JnzHU--Aj69mSYScDwbRQ-K9KQkcC05elx4D_gFtIQU'; /** ID of Template Google Doc **/
+var outputDocId = '1wTiCLfoqnckTGqu-Jo9EpgeqOEDL2ZZolOXAAY-s4Xw'; /** ID of Output Google Dosc **/
 
-var outputDir='1Z5gLsuBq8NwPOF7tPhIbxEfqnIDvMBjq';
+var outputDir='1Z5gLsuBq8NwPOF7tPhIbxEfqnIDvMBjq'; /** ID of Output Directory **/
 
 
 function onOpen() {
     var ui = SpreadsheetApp.getUi();
     ui.createMenu('Examen')
-      //.addItem('Maak wachtwoorden','setPassword_')
+      .addItem('Maak wachtwoorden','setPassword_')
       .addItem('Maak print document', 'createDocs_')
       .addItem('Update accounts uit Tabblad', 'updateAccounts')
       .addToUi();
