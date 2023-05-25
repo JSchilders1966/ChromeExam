@@ -4,14 +4,14 @@
 * Bt Jeff Schilders <jeff@schilders.com>
 **/
 
-var emailDomain="@exm.zeven-linden.nl"; /** Exam domain **/
-var baseOrgUnit="zeven-linden.nl/Examen/Accounts"; /** Where to create Exam accounts **/
+var emailDomain="@domain.tl"; /** Exam domain **/
+var baseOrgUnit="domain/Examen/Accounts"; /** Where to create Exam accounts **/
 
 var statementHeader;
-var TemplateID =  '1JnzHU--Aj69mSYScDwbRQ-K9KQkcC05elx4D_gFtIQU'; /** ID of Template Google Doc **/
-var outputDocId = '1wTiCLfoqnckTGqu-Jo9EpgeqOEDL2ZZolOXAAY-s4Xw'; /** ID of Output Google Dosc **/
+var TemplateID =  '???????????'; /** ID of Template Google Doc **/
+var outputDocId = '??????????'; /** ID of Output Google Dosc **/
 
-var outputDir='1Z5gLsuBq8NwPOF7tPhIbxEfqnIDvMBjq'; /** ID of Output Directory **/
+var outputDir='?????????'; /** ID of Output Directory **/
 
 
 function onOpen() {
